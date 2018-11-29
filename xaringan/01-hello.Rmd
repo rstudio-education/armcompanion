@@ -1,0 +1,101 @@
+---
+title: "Hello, my name is Alison"
+output: xaringan::moon_reader
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+# install.packages(tidyverse) # to install tidyverse
+# install.packages(devtools) # to install from github
+# devtools::install_github("rstudio/fontawesome") # to install fontawesome
+# devtools::install_github("hadley/emo") # to install emojis
+library(tidyverse) # load tidyverse package
+library(fontawesome) # load fontawesome package
+library(emo) # load emo package
+```
+
+# Overview
+
+You'll use this document to build your first slide deck and render to HTML using the xaringan package `r emo::ji("tada")`.
+
+You'll use this deck to introduce yourself to another workshop participant. The chunk of R code above called setup is very important- please do not delete that or the YAML header above it either.
+
+Since this will be HTML, comments like <!--this is a comment--> won't render in your final output.
+
+# Get started
+
++ This is an R Markdown document. The current output format is specified in the YAML above as html_document. 
+
++ To make this document into a slide deck, update the output in the YAML to xaringan::moon_reader, instead of html_document.
+
++ Save the current document.
+
++ Click the **Knit** button. Your slides might show up in your RStudio Viewer Pane, or as a separate window. 
+  + If in the viewer pane, click on the window looking button to the right of the broom icon to see your slides in your normal browser.
+  + If in a separate window, try clicking on the **Open in Browser** button to see in a larger window.
+  
++ Do you see two slides? If you do, look up and smile at Alison right now.
+
+# Activate moon_reader
+
++ Two ways to do this: 
+
+  + either use the RStudio Add-in and select Infinite Moon Reader (under XARINGAN)
+
+  + or in your console type xaringan::infinite_moon_reader
+
++ Again, open the rendered slides in a browser window. Now anytime you make changes to your .Rmd file and click **save**, xaringan will automatically regenerate your slides (you may need to click refresh in your browser).
+
++ Insert your own name into the YAML title, and click **save**.
+
++ Did your slides update with your name now on the title slide? If so, loop up and give Alison a thumbs up right now.
+
+<!-- now delete everything, including this message, up to the bottom of that R setup code chunk. -->
+
+# Introduce yourself! 
+
+<!-- If you deleted everything above, this should be your first slide. I'll go first. -->
+
+> My name is Alison and I am a Data Scientist & Professional Educator at RStudio. I live in Portland, Oregon with my husband, daughter, and our sourdough starter.
+
+<!-- make this slide 2 with all content aligned to the right and middle. Personalize this! -->
+
+# Find me at...
+
+<img src="https://github.com/apreshill.png" width="150px"/>
+
+<!-- If you have a GitHub account with avatar, the link above will  work -->
+
+[`r fa(name = "twitter")` apreshill](http://twitter.com/apreshill)  
+[`r fa(name = "github")` apreshill](http://github.com/apreshill)  
+[`r fa(name = "link")` alison.rbind.io](https://alison.rbind.io)  
+[`r fa(name = "paper-plane")` alison@rstudio.com](mailto:alison@rstudio.com)
+
+
+<!-- make this slide 3 with incremental bullets -->
+
+# Hi there 
+
+My name is Alison
+
+I like hot toddies
+
+`#rdogladies`
+
+and babies
+
+<!-- make this slide 4 with a few online images -->
+
+# Hi there, take 2 
+
+<!-- To link to an image:
+![Image of Momtocat](https://octodex.github.com/images/momtocat.png)
+-->
+
+<!-- Insert an octocat image you identify with: https://octodex.github.com/ (right-click: copy image location) -->
+
+# align individual lines
+
+
+
+# two columns
