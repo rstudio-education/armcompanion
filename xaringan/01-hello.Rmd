@@ -1,6 +1,6 @@
 ---
 title: "Hello, my name is Alison"
-output: xaringan::moon_reader
+output: html_document
 ---
 
 ```{r setup, include = FALSE}
@@ -12,6 +12,7 @@ knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(tidyverse) # load tidyverse package
 library(fontawesome) # load fontawesome package
 library(emo) # load emo package
+library(babynames)
 ```
 
 # Overview
@@ -98,4 +99,40 @@ and babies
 
 
 
+
 # two columns
+
+<!-- make this 2 columns with text on left and code on right -->
+
+My parents tell me that Alison with one "l" was more popular in the 80s- was it?
+
+```{r}
+# getting the data
+alison_data <- babynames %>%
+  filter(name == "Alison" | 
+           name == "Allison") %>% 
+  filter(sex == "F") 
+```
+
+
+
+# "Alison" vs. "Allison" popularity over time
+
+
+```{r}
+# pull this code to print left
+alison_plot <- ggplot(
+  alison_data, 
+  aes(x = year, 
+      y = prop,  
+      group = name, 
+      color = name)) + 
+  geom_line() 
+```
+
+
+```{r echo = FALSE}
+# pull this code to plot right
+alison_plot
+```
+
