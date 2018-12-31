@@ -18,7 +18,7 @@ url: 'https\://alison-bookdown.netlify.com/'
 
 
 
-# Prerequisites
+# Welcome {-}
 
 <p style="text-align: center;"><a href="https://github.com/rstudio-education/arm-workshop-rsc2019"><img src="images/books.jpg" alt="Just some book spines" /></a></p>
 
