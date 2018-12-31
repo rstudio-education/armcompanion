@@ -3,3 +3,5 @@ delete_merged_file: true
 language:
   ui:
     chapter_name: "Chapter "
+edit: https://github.com/rstudio-education/arm-companion-rsc2019/edit/master/bookdown/alison-bookdown/%s
+new_session: yes
