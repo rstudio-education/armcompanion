@@ -1,6 +1,9 @@
 bookdown::gitbook:
   css: style.css
   config:
+    edit:
+      link: https://github.com/rstudio-education/arm-companion-rsc2019/edit/master/bookdown/alison-bookdown/%s
+      text: "Edit"
     toc:
       before: |
         <li><a href="./">A Minimal Book Example</a></li>
