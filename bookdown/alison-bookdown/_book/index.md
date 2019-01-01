@@ -4,7 +4,7 @@ author:
 - Alison Hill
 - Yihui Xie
 - the ARM workshop participants
-date: "2018-12-31"
+date: "2019-01-01"
 site: bookdown::bookdown_site
 documentclass: book
 bibliography: [book.bib, packages.bib]
