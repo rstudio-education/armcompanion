@@ -13,6 +13,7 @@ link-citations: yes
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 cover-image: images/books.jpg
 url: 'https\://alison-bookdown.netlify.com/'
+github-repo: rstudio-education/arm-companion-rsc2019
 ---
 
 
