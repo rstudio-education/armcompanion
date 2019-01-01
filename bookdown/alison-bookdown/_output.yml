@@ -1,5 +1,6 @@
 bookdown::gitbook:
   css: style.css
+  highlight: kate
   config:
     edit:
       link: https://github.com/rstudio-education/arm-companion-rsc2019/edit/master/bookdown/alison-bookdown/%s
