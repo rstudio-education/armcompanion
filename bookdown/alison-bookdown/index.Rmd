@@ -1,5 +1,6 @@
 --- 
-title: "A Minimal Book Example"
+title: "Notes from the Advanced R Markdown Workshop"
+subtitle: "rstudio::conf 2019 | January 15 - 18, 2019 | Austin, TX"
 author: 
 - Alison Hill
 - Yihui Xie
@@ -10,13 +11,11 @@ documentclass: book
 bibliography: [book.bib, packages.bib]
 biblio-style: apalike
 link-citations: yes
-description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
+description: "This is a minimal example of using the bookdown package to write up some notes from the rstudio::conf Advanced R Markdown Workshop. The output format for this example is bookdown::gitbook."
 cover-image: images/books.jpg
 url: 'https\://alison-bookdown.netlify.com/'
 github-repo: rstudio-education/arm-companion-rsc2019
 ---
-
-
 
 
 # Welcome {-}
