@@ -6,20 +6,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <title>Notes from the Advanced R Markdown Workshop</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write up some notes from the rstudio::conf Advanced R Markdown Workshop. The output format for this example is bookdown::gitbook.">
+  <meta name="description" content="This is a minimal example using the bookdown package for the rstudio::conf Advanced R Markdown Workshop.">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
   <meta property="og:title" content="Notes from the Advanced R Markdown Workshop" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://alison-bookdown.netlify.com/" />
   <meta property="og:image" content="https://alison-bookdown.netlify.com/images/books.jpg" />
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write up some notes from the rstudio::conf Advanced R Markdown Workshop. The output format for this example is bookdown::gitbook." />
+  <meta property="og:description" content="This is a minimal example using the bookdown package for the rstudio::conf Advanced R Markdown Workshop." />
   <meta name="github-repo" content="rstudio-education/arm-companion-rsc2019" />
 
   <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Notes from the Advanced R Markdown Workshop" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write up some notes from the rstudio::conf Advanced R Markdown Workshop. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:description" content="This is a minimal example using the bookdown package for the rstudio::conf Advanced R Markdown Workshop." />
   <meta name="twitter:image" content="https://alison-bookdown.netlify.com/images/books.jpg" />
 
 <meta name="author" content="Alison Hill">
@@ -27,7 +27,6 @@
 <meta name="author" content="the ARM workshop participants">
 
 
-<meta name="date" content="2019-01-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -120,7 +119,6 @@ code span.wa { color: #bf0303; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="css/arm.css" type="text/css" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" type="text/css" />
 </head>
 
 <body>
@@ -136,18 +134,22 @@ code span.wa { color: #bf0303; } /* Warning */
 <li><a href="./">ARM | 2019 | Austin</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#render-the-book"><i class="fa fa-check"></i>Render the book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#serve-the-book"><i class="fa fa-check"></i>Serve the book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#this-page"><i class="fa fa-check"></i>This page</a></li>
+</ul></li>
 <li class="part"><span><b>Day 1: AM session</b></span></li>
-<li class="chapter" data-level="1" data-path="xaringan.html"><a href="xaringan.html"><i class="fa fa-check"></i><b>1</b> xaringan Presentations</a></li>
-<li class="chapter" data-level="2" data-path="dashboards.html"><a href="dashboards.html"><i class="fa fa-check"></i><b>2</b> Dashboards</a></li>
-<li class="chapter" data-level="3" data-path="learnr.html"><a href="learnr.html"><i class="fa fa-check"></i><b>3</b> Interactive Tutorials</a></li>
+<li class="chapter" data-level="1" data-path="xaringan.html"><a href="xaringan.html"><i class="fa fa-check"></i><b>1</b> xaringan</a></li>
+<li class="chapter" data-level="2" data-path="flexdashboard.html"><a href="flexdashboard.html"><i class="fa fa-check"></i><b>2</b> flexdashboard</a></li>
+<li class="chapter" data-level="3" data-path="learnr.html"><a href="learnr.html"><i class="fa fa-check"></i><b>3</b> learnr</a></li>
 <li class="part"><span><b>Day 1: PM session</b></span></li>
-<li class="chapter" data-level="4" data-path="bookdown.html"><a href="bookdown.html"><i class="fa fa-check"></i><b>4</b> Bookdown</a><ul>
+<li class="chapter" data-level="4" data-path="bookdown.html"><a href="bookdown.html"><i class="fa fa-check"></i><b>4</b> bookdown</a><ul>
 <li class="chapter" data-level="4.1" data-path="bookdown.html"><a href="bookdown.html#example-one"><i class="fa fa-check"></i><b>4.1</b> Example one</a></li>
 <li class="chapter" data-level="4.2" data-path="bookdown.html"><a href="bookdown.html#example-two"><i class="fa fa-check"></i><b>4.2</b> Example two</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>5</b> Websites</a></li>
-<li class="chapter" data-level="6" data-path="officer.html"><a href="officer.html"><i class="fa fa-check"></i><b>6</b> Corporate Reporting</a></li>
+<li class="chapter" data-level="5" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>5</b> blogdown</a></li>
+<li class="chapter" data-level="6" data-path="officer.html"><a href="officer.html"><i class="fa fa-check"></i><b>6</b> Corporate Reporting with officer</a></li>
 <li class="part"><span><b>Day 2: AM session</b></span></li>
 <li class="chapter" data-level="7" data-path="internals.html"><a href="internals.html"><i class="fa fa-check"></i><b>7</b> R Markdown Internals</a></li>
 <li class="chapter" data-level="8" data-path="extend.html"><a href="extend.html"><i class="fa fa-check"></i><b>8</b> Extending R Markdown</a></li>
@@ -157,9 +159,7 @@ code span.wa { color: #bf0303; } /* Warning */
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a rel="license" href="https://github.com/rstudio-education/arm-workshop-rsc2019/blob/master/LICENSE.md">
-         <i class="fab fa-creative-commons fa-lg"></i> 
-         <i class="fab fa-creative-commons-by fa-lg"></i> 
-         <i class="fab fa-creative-commons-sa fa-lg"></i>
+         <i class="fa fa-creative-commons"></i> 
 </a>
 </li>
 
@@ -182,29 +182,111 @@ code span.wa { color: #bf0303; } /* Warning */
             <section class="normal" id="section-">
 <div id="header">
 <h1 class="title">Notes from the Advanced R Markdown Workshop</h1>
-<h2 class="subtitle"><em>rstudio::conf 2019 | January 15 - 18, 2019 | Austin, TX</em></h2>
+<h2 class="subtitle"><em>rstudio::conf 2019 | January 15 - 16, 2019 | Austin, TX</em></h2>
 <p class="author"><em>Alison Hill</em></p>
 <p class="author"><em>Yihui Xie</em></p>
 <p class="author"><em>the ARM workshop participants</em></p>
-<p class="date"><em>2019-01-01</em></p>
+<p class="date"><em>January 15 - 16, 2019</em></p>
 </div>
 <div id="welcome" class="section level1 unnumbered">
 <h1>Welcome</h1>
-<p style="text-align: center;">
-<a href="https://github.com/rstudio-education/arm-workshop-rsc2019"><img src="images/books.jpg" alt="Just some book spines" /></a>
-</p>
+<p><img src="images/books.jpg" width="2456" /></p>
+<p>This is a minimal example of using the bookdown package to write a book. The output format for this example is <code>bookdown::gitbook</code>.</p>
 <p>This is a <em>sample</em> book written in <strong>Markdown</strong>. You can use anything that Pandoc’s Markdown supports, e.g., a math equation <span class="math inline">\(a^2 + b^2 = c^2\)</span>.</p>
 <p>The <strong>bookdown</strong> package can be installed from CRAN or Github:</p>
 <pre class="sourceCode r"><code class="sourceCode r"><span class="kw">install.packages</span>(<span class="st">&quot;bookdown&quot;</span>)
 <span class="co"># or the development version</span>
 <span class="co"># devtools::install_github(&quot;rstudio/bookdown&quot;)</span></code></pre>
 <p>Remember each Rmd file contains one and only one chapter, and a chapter is defined by the first-level heading <code>#</code>.</p>
+<div id="render-the-book" class="section level2 unnumbered">
+<h2>Render the book</h2>
+<p>To render this book, you can use:</p>
+<pre class="sourceCode r"><code class="sourceCode r">bookdown<span class="op">::</span><span class="kw">render_book</span>(<span class="st">&#39;index.Rmd&#39;</span>)</code></pre>
+<p>To render this book from within a subdirectory (that is, if the book’s files are located in a subdirectory relative to your project root), you’ll need to use:</p>
+<pre class="sourceCode r"><code class="sourceCode r">xfun<span class="op">::</span><span class="kw">in_dir</span>(<span class="st">&#39;bookdown/alison-bookdown&#39;</span>, bookdown<span class="op">::</span><span class="kw">render_book</span>(<span class="st">&#39;index.Rmd&#39;</span>))</code></pre>
 <p>To compile this example to PDF, you need XeLaTeX. You are recommended to install TinyTeX (which includes XeLaTeX): <a href="https://yihui.name/tinytex/" class="uri">https://yihui.name/tinytex/</a>.</p>
+</div>
+<div id="serve-the-book" class="section level2 unnumbered">
+<h2>Serve the book</h2>
+<p>Instead of running <code>render_book()</code> each time you want to view the changes, you can use the function <code>bookdown::serve_book()</code> to start a live preview of the book. Any time a Rmd file is saved, the book will be recompiled automatically, and the preview will be updated to reflect the changes.<a href="#fn1" class="footnote-ref" id="fnref1"><sup>1</sup></a></p>
+</div>
+<div id="this-page" class="section level2 unnumbered">
+<h2>This page</h2>
+<p>This page is created from the <code>index.Rmd</code> file. The <code>index.Rmd</code> file has a YAML with configurations you may want to explore. The only required parameter is site: bookdown::bookdown_site. You can see all the YAML parameters here:</p>
+<pre class="sourceCode r"><code class="sourceCode r">rmarkdown<span class="op">::</span><span class="kw">yaml_front_matter</span>(here<span class="op">::</span><span class="kw">here</span>(<span class="st">&#39;bookdown/alison-bookdown/index.Rmd&#39;</span>))</code></pre>
+<pre><code>## $title
+## [1] &quot;Notes from the Advanced R Markdown Workshop&quot;
+## 
+## $params
+## $params$last_updated
+## [1] &quot;Sys.Date()&quot;
+## 
+## $params$event
+## [1] &quot;rstudio::conf 2019&quot;
+## 
+## $params$date
+## [1] &quot;January 15 - 16, 2019&quot;
+## 
+## $params$place
+## [1] &quot;Austin, TX&quot;
+## 
+## 
+## $subtitle
+## [1] &quot;`r params$event` | `r params$date` | `r params$place`&quot;
+## 
+## $author
+## [1] &quot;Alison Hill&quot;                   &quot;Yihui Xie&quot;                    
+## [3] &quot;the ARM workshop participants&quot;
+## 
+## $date
+## [1] &quot;January 15 - 16, 2019&quot;
+## 
+## $site
+## [1] &quot;bookdown::bookdown_site&quot;
+## 
+## $documentclass
+## [1] &quot;book&quot;
+## 
+## $bibliography
+## [1] &quot;book.bib&quot;     &quot;packages.bib&quot;
+## 
+## $`biblio-style`
+## [1] &quot;apalike&quot;
+## 
+## $`link-citations`
+## [1] TRUE
+## 
+## $description
+## [1] &quot;This is a minimal example using the bookdown package for the rstudio::conf Advanced R Markdown Workshop.&quot;
+## 
+## $`cover-image`
+## [1] &quot;images/books.jpg&quot;
+## 
+## $url
+## [1] &quot;https\\://alison-bookdown.netlify.com/&quot;
+## 
+## $`github-repo`
+## [1] &quot;rstudio-education/arm-companion-rsc2019&quot;</code></pre>
+<p>The possible YAML parameters are based on Pandoc. For EPUB output formats like <code>gitbook</code>, you can see all the possible Pandoc parameters <a href="https://pandoc.org/MANUAL.html#creating-epubs-with-pandoc">here</a>.</p>
+<blockquote>
+<p><em>It is important to point out that most parameters in this YAML will not have clear visible effects on the HTML output, but they may be useful when you deploy the HTML output as a website.</em><a href="#fn2" class="footnote-ref" id="fnref2"><sup>2</sup></a></p>
+</blockquote>
+<p>For example, using the <code>cover-image</code> YAML parameter does <strong>not</strong> add a visible cover image to the front of your <em>rendered</em> HTML book. In the workshop, we talked more about recommended YAML parameters to feed to Pandoc and why.</p>
+<p>You can use any of these YAML parameters with R code, using the rmarkdown package function <code>metadata</code>. For example, here I’ll show you the title again with inline code: Notes from the Advanced R Markdown Workshop</p>
+<p>You can also set up custom parameters in your YAML to use in the text of your book with inline R code. For example, this book was last updated on 2019-01-01, and was most recently used for the rstudio::conf 2019 in Austin, TX.</p>
 
+</div>
 </div>
 
 
 
+<div class="footnotes">
+<hr />
+<ol start="1">
+<li id="fn1"><p><a href="https://bookdown.org/yihui/bookdown/serve-the-book.html" class="uri">https://bookdown.org/yihui/bookdown/serve-the-book.html</a><a href="index.html#fnref1" class="footnote-back">↩</a></p></li>
+<li id="fn2"><p><a href="https://bookdown.org/yihui/bookdown/html.html#gitbook-style" class="uri">https://bookdown.org/yihui/bookdown/html.html#gitbook-style</a><a href="index.html#fnref2" class="footnote-back">↩</a></p></li>
+</ol>
+</div>
             </section>
 
           </div>

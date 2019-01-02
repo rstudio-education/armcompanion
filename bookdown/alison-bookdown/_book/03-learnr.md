@@ -1,3 +1,3 @@
-# Interactive Tutorials {#learnr}
+# learnr
 
-We describe our methods in this chapter.
+Your notes go here

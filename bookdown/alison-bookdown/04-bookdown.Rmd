@@ -1,8 +1,8 @@
 # (PART\*) Day 1: PM session {-}
 
-# Bookdown
+# bookdown
 
-Some _significant_ applications are demonstrated in this chapter.
+Your notes go here...
 
 ## Example one
 

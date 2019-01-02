@@ -5,21 +5,21 @@
 
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Chapter 4 Bookdown | Notes from the Advanced R Markdown Workshop</title>
-  <meta name="description" content="This is a minimal example of using the bookdown package to write up some notes from the rstudio::conf Advanced R Markdown Workshop. The output format for this example is bookdown::gitbook.">
+  <title>Chapter 4 bookdown | Notes from the Advanced R Markdown Workshop</title>
+  <meta name="description" content="This is a minimal example using the bookdown package for the rstudio::conf Advanced R Markdown Workshop.">
   <meta name="generator" content="bookdown  and GitBook 2.6.7">
 
-  <meta property="og:title" content="Chapter 4 Bookdown | Notes from the Advanced R Markdown Workshop" />
+  <meta property="og:title" content="Chapter 4 bookdown | Notes from the Advanced R Markdown Workshop" />
   <meta property="og:type" content="book" />
   <meta property="og:url" content="https://alison-bookdown.netlify.com/" />
   <meta property="og:image" content="https://alison-bookdown.netlify.com/images/books.jpg" />
-  <meta property="og:description" content="This is a minimal example of using the bookdown package to write up some notes from the rstudio::conf Advanced R Markdown Workshop. The output format for this example is bookdown::gitbook." />
+  <meta property="og:description" content="This is a minimal example using the bookdown package for the rstudio::conf Advanced R Markdown Workshop." />
   <meta name="github-repo" content="rstudio-education/arm-companion-rsc2019" />
 
   <meta name="twitter:card" content="summary" />
-  <meta name="twitter:title" content="Chapter 4 Bookdown | Notes from the Advanced R Markdown Workshop" />
+  <meta name="twitter:title" content="Chapter 4 bookdown | Notes from the Advanced R Markdown Workshop" />
   
-  <meta name="twitter:description" content="This is a minimal example of using the bookdown package to write up some notes from the rstudio::conf Advanced R Markdown Workshop. The output format for this example is bookdown::gitbook." />
+  <meta name="twitter:description" content="This is a minimal example using the bookdown package for the rstudio::conf Advanced R Markdown Workshop." />
   <meta name="twitter:image" content="https://alison-bookdown.netlify.com/images/books.jpg" />
 
 <meta name="author" content="Alison Hill">
@@ -27,7 +27,6 @@
 <meta name="author" content="the ARM workshop participants">
 
 
-<meta name="date" content="2019-01-01">
 
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="apple-mobile-web-app-capable" content="yes">
@@ -120,7 +119,6 @@ code span.wa { color: #bf0303; } /* Warning */
 </style>
 
 <link rel="stylesheet" href="css/arm.css" type="text/css" />
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" type="text/css" />
 </head>
 
 <body>
@@ -136,18 +134,22 @@ code span.wa { color: #bf0303; } /* Warning */
 <li><a href="./">ARM | 2019 | Austin</a></li>
 
 <li class="divider"></li>
-<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i>Welcome</a><ul>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#render-the-book"><i class="fa fa-check"></i>Render the book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#serve-the-book"><i class="fa fa-check"></i>Serve the book</a></li>
+<li class="chapter" data-level="" data-path="index.html"><a href="index.html#this-page"><i class="fa fa-check"></i>This page</a></li>
+</ul></li>
 <li class="part"><span><b>Day 1: AM session</b></span></li>
-<li class="chapter" data-level="1" data-path="xaringan.html"><a href="xaringan.html"><i class="fa fa-check"></i><b>1</b> xaringan Presentations</a></li>
-<li class="chapter" data-level="2" data-path="dashboards.html"><a href="dashboards.html"><i class="fa fa-check"></i><b>2</b> Dashboards</a></li>
-<li class="chapter" data-level="3" data-path="learnr.html"><a href="learnr.html"><i class="fa fa-check"></i><b>3</b> Interactive Tutorials</a></li>
+<li class="chapter" data-level="1" data-path="xaringan.html"><a href="xaringan.html"><i class="fa fa-check"></i><b>1</b> xaringan</a></li>
+<li class="chapter" data-level="2" data-path="flexdashboard.html"><a href="flexdashboard.html"><i class="fa fa-check"></i><b>2</b> flexdashboard</a></li>
+<li class="chapter" data-level="3" data-path="learnr.html"><a href="learnr.html"><i class="fa fa-check"></i><b>3</b> learnr</a></li>
 <li class="part"><span><b>Day 1: PM session</b></span></li>
-<li class="chapter" data-level="4" data-path="bookdown.html"><a href="bookdown.html"><i class="fa fa-check"></i><b>4</b> Bookdown</a><ul>
+<li class="chapter" data-level="4" data-path="bookdown.html"><a href="bookdown.html"><i class="fa fa-check"></i><b>4</b> bookdown</a><ul>
 <li class="chapter" data-level="4.1" data-path="bookdown.html"><a href="bookdown.html#example-one"><i class="fa fa-check"></i><b>4.1</b> Example one</a></li>
 <li class="chapter" data-level="4.2" data-path="bookdown.html"><a href="bookdown.html#example-two"><i class="fa fa-check"></i><b>4.2</b> Example two</a></li>
 </ul></li>
-<li class="chapter" data-level="5" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>5</b> Websites</a></li>
-<li class="chapter" data-level="6" data-path="officer.html"><a href="officer.html"><i class="fa fa-check"></i><b>6</b> Corporate Reporting</a></li>
+<li class="chapter" data-level="5" data-path="blogdown.html"><a href="blogdown.html"><i class="fa fa-check"></i><b>5</b> blogdown</a></li>
+<li class="chapter" data-level="6" data-path="officer.html"><a href="officer.html"><i class="fa fa-check"></i><b>6</b> Corporate Reporting with officer</a></li>
 <li class="part"><span><b>Day 2: AM session</b></span></li>
 <li class="chapter" data-level="7" data-path="internals.html"><a href="internals.html"><i class="fa fa-check"></i><b>7</b> R Markdown Internals</a></li>
 <li class="chapter" data-level="8" data-path="extend.html"><a href="extend.html"><i class="fa fa-check"></i><b>8</b> Extending R Markdown</a></li>
@@ -157,9 +159,7 @@ code span.wa { color: #bf0303; } /* Warning */
 <li class="chapter" data-level="" data-path="references.html"><a href="references.html"><i class="fa fa-check"></i>References</a></li>
 <li class="divider"></li>
 <li><a rel="license" href="https://github.com/rstudio-education/arm-workshop-rsc2019/blob/master/LICENSE.md">
-         <i class="fab fa-creative-commons fa-lg"></i> 
-         <i class="fab fa-creative-commons-by fa-lg"></i> 
-         <i class="fab fa-creative-commons-sa fa-lg"></i>
+         <i class="fa fa-creative-commons"></i> 
 </a>
 </li>
 
@@ -181,8 +181,8 @@ code span.wa { color: #bf0303; } /* Warning */
 
             <section class="normal" id="section-">
 <div id="bookdown" class="section level1">
-<h1><span class="header-section-number">Chapter 4</span> Bookdown</h1>
-<p>Some <em>significant</em> applications are demonstrated in this chapter.</p>
+<h1><span class="header-section-number">Chapter 4</span> bookdown</h1>
+<p>Your notes go here…</p>
 <div id="example-one" class="section level2">
 <h2><span class="header-section-number">4.1</span> Example one</h2>
 </div>

@@ -1,5 +1,5 @@
 bookdown::gitbook:
-  css: [css/arm.css, 'https://use.fontawesome.com/releases/v5.0.13/css/all.css']
+  css: [css/arm.css]
   highlight: kate
   config:
     edit:
@@ -10,9 +10,7 @@ bookdown::gitbook:
         <li><a href="./">ARM | 2019 | Austin</a></li>
       after: |
          <li><a rel="license" href="https://github.com/rstudio-education/arm-workshop-rsc2019/blob/master/LICENSE.md">
-                  <i class="fab fa-creative-commons fa-lg"></i> 
-                  <i class="fab fa-creative-commons-by fa-lg"></i> 
-                  <i class="fab fa-creative-commons-sa fa-lg"></i>
+                  <i class="fa fa-creative-commons"></i> 
          </a>
          </li>
     download: ["pdf", "epub"]
