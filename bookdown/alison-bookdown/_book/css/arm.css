@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Cabin|Cabin+Condensed|Space+Mono');
+@import url('https://fonts.googleapis.com/css?family=Cabin|Cabin+Condensed|PT+Mono');
 
 p, div {
   font-family: 'Cabin', serif;
@@ -12,7 +12,7 @@ li, h1, h2, h3 {
 
 .book .book-body .page-wrapper .page-inner section.normal code, 
 .book .book-body .page-wrapper .page-inner section.normal pre {
-  font-family: 'Space Mono', monospace;
+  font-family: 'PT Mono', monospace;
   font-size: 1em;
 }
 
