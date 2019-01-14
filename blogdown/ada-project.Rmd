@@ -1,0 +1,12 @@
+---
+title: "ada-project"
+output: html_document
+---
+
+read in data
+
+do analyses/viz
+
+here are my slides too
+
+link to slides

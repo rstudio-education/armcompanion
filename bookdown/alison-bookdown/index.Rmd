@@ -20,7 +20,7 @@ description: "This is a minimal example using the bookdown package for the rstud
 cover-image: images/books.jpg
 url: 'https\://alison-bookdown.netlify.com/'
 github-repo: rstudio-education/arm-companion-rsc2019
-
+twitter-handle: apreshill
 ---
 
 

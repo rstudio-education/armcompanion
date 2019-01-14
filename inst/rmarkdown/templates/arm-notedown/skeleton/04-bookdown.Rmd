@@ -1,0 +1,13 @@
+# (PART\*) Day 1: PM session {-}
+
+# bookdown
+
+Your notes go here...
+
+## Preface: the index.Rmd {bookdown-block1}
+
+## Story: the .Rmd chapters {bookdown-block2}
+
+## Table of Contents {bookdown-block3}
+
+## Off to Press: the other .yml files and publishing {bookdown-block4}

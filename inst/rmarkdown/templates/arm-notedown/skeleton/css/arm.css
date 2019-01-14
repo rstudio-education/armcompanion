@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Cabin+Condensed|PT+Mono');
+
+p, div {
+  font-family: 'Cabin', serif;
+  font-size: 1.6rem;
+}
+
+li, h1, h2, h3 {
+  font-family: 'Cabin Condensed', sans-serif;
+  font-size: 1.6rem;
+}
+
+.book .book-body .page-wrapper .page-inner section.normal code, 
+.book .book-body .page-wrapper .page-inner section.normal pre {
+  font-family: 'PT Mono', monospace;
+  font-size: 1em;
+}
+
+p.caption {
+  color: #777;
+  margin-top: 10px;
+}
+p code {
+  white-space: inherit;
+}
+pre {
+  word-break: normal;
+  word-wrap: normal;
+}
+pre code {
+  white-space: inherit;
+}

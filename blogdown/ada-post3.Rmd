@@ -1,0 +1,12 @@
+---
+title: "ada-post3"
+output: html_document
+---
+
+from scott brundage
+
+https://www.tor.com/2012/10/16/ada-lovelace-through-the-centuries/
+
+We can insert image from [link](https://www.tor.com/2012/10/16/ada-lovelace-through-the-centuries/)
+
+Or you can insert from local in `img/ada-gif.gif`

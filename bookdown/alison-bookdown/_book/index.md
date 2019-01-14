@@ -20,7 +20,7 @@ description: "This is a minimal example using the bookdown package for the rstud
 cover-image: images/books.jpg
 url: 'https\://alison-bookdown.netlify.com/'
 github-repo: rstudio-education/arm-companion-rsc2019
-
+twitter-handle: apreshill
 ---
 
 
@@ -129,6 +129,9 @@ rmarkdown::yaml_front_matter(here::here('bookdown/alison-bookdown/index.Rmd'))
 ## 
 ## $`github-repo`
 ## [1] "rstudio-education/arm-companion-rsc2019"
+## 
+## $`twitter-handle`
+## [1] "apreshill"
 ```
 
 The possible YAML parameters are based on Pandoc. For EPUB output formats like `gitbook`, you can see all the possible Pandoc parameters [here](https://pandoc.org/MANUAL.html#creating-epubs-with-pandoc). 
@@ -139,7 +142,7 @@ For example, using the `cover-image` YAML parameter does **not** add a visible c
 
 You can use any of these YAML parameters with R code, using the rmarkdown package function `metadata`. For example, here I'll show you the title again with inline code: Notes from the Advanced R Markdown Workshop
 
-You can also set up custom parameters in your YAML to use in the text of your book with inline R code. For example, this book was last updated on 2019-01-01, and was most recently used for the rstudio::conf 2019 in Austin, TX.
+You can also set up custom parameters in your YAML to use in the text of your book with inline R code. For example, this book was last updated on 2019-01-07, and was most recently used for the rstudio::conf 2019 in Austin, TX.
 
 
 

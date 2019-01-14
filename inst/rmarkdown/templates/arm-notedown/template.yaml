@@ -1,0 +1,4 @@
+name: arm-notes
+description: >
+   A template for taking notes during the ARM workshop. Also a fully customized bookdown package skeleton.
+create_dir: TRUE

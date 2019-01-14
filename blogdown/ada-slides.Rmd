@@ -1,0 +1,62 @@
+---
+title: "All about Ada"
+output: xaringan::moon_reader
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse) # load tidyverse package
+library(WikipediaR) # load WikipediaR package
+library(lubridate) # load lubridate package
+```
+
+<!-- don't delete anything above me! -->
+
+```{r eval = FALSE, include = FALSE}
+# run this chunk to install packages
+# once done, you can delete this chunk
+# or you may wish to leave it with eval = FALSE
+install.packages(tidyverse) # install tidyverse
+install.packages(WikipediaR) # install WikipediaR
+install.packages(lubridate) # install lubridate
+```
+
+# Overview
+
+You'll use this document to build a `xaringan` slide deck and render to HTML using the xaringan `r fa(name = "r-project", fill = "#61acf0")` package, within a `blogdown` site.
+
+You'll use this deck to tell us all about Ada Lovelace. The chunk of R code above called setup is very important- please do not delete that or the YAML header above it either.
+
+Since this will be HTML, comments like this [<!--this is a comment-->] won't render in your final output.
+
+# Ada data
+
+```{r}
+ada_contribs <- contribs(page = "Ada_Lovelace", rvprop = "user|userid|timestamp|size") %>% 
+  pluck(2) %>% 
+  as_tibble() %>% 
+  mutate(size = as.double(size),
+         timestamp = ymd_hms(timestamp)) %>% 
+  filter(size > 0) 
+```
+
+# Who are these people?
+
+```{r}
+glimpse(ada_contribs)
+```
+
+```{r}
+ggplot(ada_contribs, aes(x = timestamp, y = size)) +
+  geom_line()
+```
+
+# Number of contributors
+
+```{r eval = FALSE}
+ada_contribs %>% 
+  count(userid) %>% 
+  ggplot(aes(x = timestamp, y = n)) + 
+  geom_line()
+```
+

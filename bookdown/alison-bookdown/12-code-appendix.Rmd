@@ -1,0 +1,7 @@
+# (APPENDIX) Appendix {-}
+
+# Code appendix
+
+```{r ref.label=knitr::all_labels(), echo = T, eval = F}
+```
+

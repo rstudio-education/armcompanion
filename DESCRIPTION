@@ -1,0 +1,12 @@
+Package: armcompanion
+Title: A companion package for the ARM workshop series
+Version: 0.0.0.9000
+Authors@R: 
+    person(given = "Alison",
+           family = "Hill",
+           role = c("aut", "cre"),
+           email = "alison@rstudio.com")
+Description: This package provides instructions and templates for participating in the Advanced R Markdown Workshop by RStudio.
+License: CC-BY-SA
+Encoding: UTF-8
+LazyData: true

@@ -1,0 +1,12 @@
+---
+title: "ada-post1"
+output: html_document
+---
+
+Octocat is here
+
+https://octodex.github.com/mona-lovelace
+
+We can insert image from [link](https://octodex.github.com/mona-lovelace)
+
+Or you can insert from local in `img/ada-octocat.gif`

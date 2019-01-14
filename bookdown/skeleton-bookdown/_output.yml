@@ -2,6 +2,7 @@ bookdown::gitbook:
   css: style.css
   config:
     toc:
+      collapse: subsection
       before: |
         <li><a href="./">A Minimal Book Example</a></li>
       after: |

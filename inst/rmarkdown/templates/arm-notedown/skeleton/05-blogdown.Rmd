@@ -1,0 +1,13 @@
+# blogdown
+
+Your notes go here...
+
+## Directory Structure {blogdown-block1}
+
+## The config.toml file {blogdown-block2}
+
+## Edit content {blogdown-block3}
+
+## Add new content {blogdown-block4}
+
+## Publishing {blogdown-block5}

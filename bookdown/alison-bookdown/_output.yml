@@ -1,6 +1,6 @@
 bookdown::gitbook:
   css: [css/arm.css]
-  highlight: kate
+  highlight: haddock
   config:
     edit:
       link: https://github.com/rstudio-education/arm-companion-rsc2019/edit/master/bookdown/alison-bookdown/%s
@@ -13,7 +13,7 @@ bookdown::gitbook:
                   <i class="fa fa-creative-commons"></i> 
          </a>
          </li>
-    download: ["pdf", "epub"]
+    download: ["pdf", "epub", "rmd"]
     sharing:
       github: yes
       facebook: no

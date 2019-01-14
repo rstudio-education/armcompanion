@@ -1,6 +1,7 @@
 --- 
 title: "A Minimal Book Example"
-author: "Yihui Xie"
+author: 
+  name: Yihui Xie
 date: "`r Sys.Date()`"
 site: bookdown::bookdown_site
 documentclass: book
@@ -9,6 +10,7 @@ biblio-style: apalike
 link-citations: yes
 description: "This is a minimal example of using the bookdown package to write a book. The output format for this example is bookdown::gitbook."
 ---
+
 
 # Prerequisites
 

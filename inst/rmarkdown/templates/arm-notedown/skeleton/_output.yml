@@ -1,0 +1,20 @@
+bookdown::gitbook:
+  css: [css/arm.css]
+  highlight: kate
+  config:
+    edit:
+      link: https://github.com/rstudio-education/arm-companion-rsc2019/edit/master/bookdown/alison-bookdown/%s
+      text: "Edit"
+    toc:
+      before: |
+        <li><a href="./">ARM | 2019 | Austin</a></li>
+      after: |
+         <li><a rel="license" href="https://github.com/rstudio-education/arm-workshop-rsc2019/blob/master/LICENSE.md">
+                  <i class="fa fa-creative-commons"></i>
+         </a>
+         </li>
+    download: ["rmd"]
+    sharing:
+      github: yes
+      facebook: no
+      twitter: yes
