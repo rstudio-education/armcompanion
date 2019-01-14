@@ -1,5 +1,6 @@
-# arm-companion-rsc2019
+# armcompanion
 Companion materials for the rstudio::conf 2019 Advanced R Markdown workshop
+
 
 # To use
 
