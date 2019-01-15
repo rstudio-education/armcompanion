@@ -7,10 +7,37 @@ output:
 ---
 
 ```{r setup, include=FALSE}
+knitr::opts_chunk$set(warning = FALSE, message = FALSE, eval = FALSE)
 library(flexdashboard)
 #remotes::install_github("apreshill/bakeoff")
 library(bakeoff)
+library(tidyverse)
 ```
+
+Column {data-width=650}
+-----------------------------------------------------------------------
+
+### Chart A
+
+```{r}
+
+```
+
+Column {data-width=350}
+-----------------------------------------------------------------------
+
+### Chart B
+
+```{r}
+
+```
+
+### Chart C
+
+```{r}
+
+```
+
 
 
 How many series total?
