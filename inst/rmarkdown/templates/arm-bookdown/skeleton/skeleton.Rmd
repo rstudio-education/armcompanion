@@ -6,7 +6,7 @@ params:
   date: "January 15 - 16, 2019"
   place: "Austin, TX"
 subtitle: "`r params$event` | `r params$date` | `r params$place`"
-author: Your name here
+author: "Your name here"
 date: "January 15 - 16, 2019"
 site: bookdown::bookdown_site
 documentclass: book
