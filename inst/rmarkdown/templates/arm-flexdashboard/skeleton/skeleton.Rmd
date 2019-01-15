@@ -57,7 +57,7 @@ epi_by_series
 ```
 
 ```{r}
-ggplot(epi_by_series, aes(as.factor(series), n)) +
+ggplot(epi_by_series, aes(as.factor(series), nn)) +
   geom_col()
 ```
 
