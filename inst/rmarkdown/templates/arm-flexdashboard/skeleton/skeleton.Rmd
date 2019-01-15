@@ -1,0 +1,105 @@
+---
+title: "The Great British Bake Off"
+output: 
+  flexdashboard::flex_dashboard:
+    orientation: columns
+    vertical_layout: fill
+---
+
+```{r setup, include=FALSE}
+library(flexdashboard)
+#remotes::install_github("apreshill/bakeoff")
+library(bakeoff)
+```
+
+
+How many series total?
+
+```{r}
+challenges %>% 
+  distinct(series) 
+```
+
+How many episodes in each series?
+
+```{r}
+epi_by_series <- challenges %>% 
+  count(series, episode) %>% 
+  count(series)
+epi_by_series
+```
+
+```{r}
+ggplot(epi_by_series, aes(as.factor(series), n)) +
+  geom_col()
+```
+
+
+
+How many bakers in each series?
+
+```{r}
+bakers %>% 
+  count(series)
+```
+
+
+```{r}
+ggplot(bakers, aes(as.factor(series))) + 
+    geom_bar() 
+```
+
+
+
+How many bakers were in each episode, per series? 
+
+```{r}
+ggplot(challenges, aes(as.factor(episode))) + 
+    geom_bar() + 
+    facet_wrap(~series)
+```
+
+What about ages across series?
+
+```{r}
+ggplot(bakers, aes(as.factor(series), age, colour = as.factor(series))) +
+  geom_point(alpha = .5) +
+  guides(colour = FALSE)
+```
+
+What about max ages?
+
+```{r}
+bakers %>% 
+  group_by(series) %>% 
+  top_n(1, age)
+```
+
+What about min ages?
+
+```{r}
+bakers %>% 
+  group_by(series) %>% 
+  top_n(-1, age)
+```
+
+
+Where was the show filmed?
+
+```{r}
+library(leaflet)
+leaflet() %>% 
+  addTiles() %>% 
+  addMarkers(lat = 51.4560, lng = -1.4136)
+```
+
+Who won?
+
+```{r}
+library(DT)
+library(bakeoff) 
+baker_results %>% 
+  filter(series_winner == 1) %>% 
+  datatable()
+```
+
