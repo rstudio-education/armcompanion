@@ -14,15 +14,40 @@ params:
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(warning = FALSE, message = FALSE)
 library(tidyverse) # load tidyverse package
-library(fontawesome) # load fontawesome package
 library(babynames) # load babynames package
+#library(leaflet) # uncomment to use if you install
+#library(fontawesome) # uncomment to use if you install
 ```
 
 ```{r eval = FALSE}
 # optional package installs if you want to do more below
 install.packages("leaflet")
-
+remotes::install_github("rstudio/fontawesome")
 ```
+
+
+<!-- introduce yourself here -->
+
+Hello my name is `r rmarkdown::metadata$author`!
+
+Say something about what you do, what you use R Markdown for, your favorite R package, etc.
+
+<!-- include an image here, if you have a GitHub account use your profile pic! -->
+
+```{r photo, echo = FALSE}
+knitr::include_graphics("https://github.com/USERNAME.png") # update USERNAME here
+```
+
+<!-- remove characters on this line to render below if you install fontawesome package
+
+Find me at...
+
+[`r fa(name = "twitter")` @HANDLE](http://twitter.com/HANDLE)  
+[`r fa(name = "github")` @USERNAME](http://github.com/USERNAME)  
+[`r fa(name = "link")` personal website](LINKHERE)  
+[`r fa(name = "paper-plane")` example@email.com](mailto:example@email.com)
+
+remove this line too --> 
 
 
 <!-- we make the data here -->
