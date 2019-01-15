@@ -1,0 +1,83 @@
+---
+title: "Hello my name is <yournamehere>"
+author: "Your name here"
+date: "`r Sys.Date()`"
+output: html_document
+params:
+  name1: "Alison" 
+  name2: "Allison"
+---
+
+<!-- edit name1 and name2 in the YAML above -->
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(warning = FALSE, message = FALSE)
+library(tidyverse) # load tidyverse package
+library(fontawesome) # load fontawesome package
+library(babynames) # load babynames package
+```
+
+```{r eval = FALSE}
+# optional package installs if you want to do more below
+install.packages("leaflet")
+
+```
+
+
+<!-- we make the data here -->
+
+```{r filterdata}
+# getting the data
+namedata <- babynames %>%
+  filter(name == params$name1 | 
+           name == params$name2) %>% 
+  filter(sex == "F") 
+```
+
+<!-- get and see top years for each name -->
+
+```{r gettopyears}
+topyears <- namedata %>% 
+  group_by(name) %>% 
+  top_n(1, prop) 
+```
+
+
+```{r topyear-name1}
+topyears %>% 
+  filter(name == params$name1)
+```
+
+
+```{r topyear-name2}
+topyears %>% 
+  filter(name == params$name2)
+```
+
+
+<!-- plot name popularity over time -->
+
+
+```{r}
+ggplot(namedata, 
+  aes(x = year, 
+      y = prop,  
+      group = name, 
+      color = name)) + 
+  geom_line() 
+```
+
+
+<!-- where are you from? -->
+
+
+```{r eval = FALSE}
+# erase this chunk option if you want to include a map
+library(leaflet)
+leaflet() %>% addTiles() %>% setView(lat = 30.2621, lng = -97.7382, zoom = 17)
+```
+
+
+
+

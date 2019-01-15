@@ -1,0 +1,4 @@
+name: arm-xaringan
+description: >
+   A template for introducing yourself to your neighbor during the ARM workshop. Also a xaringan slide deck skeleton.
+create_dir: FALSE
